@@ -1,0 +1,65 @@
+blocked:
+# Server commands
+ - /op
+ - /bukkit:op
+ - /minecraft:op
+ - /deop
+ - /bukkit:deop
+ - /minecraft:deop
+ - /version
+ - /bukkit:version
+ - /ver
+ - /bukkit:ver
+ - /pl
+ - /bukkit:pl
+ - /plugins
+ - /bukkit:plugins
+ - /reload
+ - /bukkit:reload
+ - /?
+ - /bukkit:?
+ - /about
+ - /bukkit:about
+ - /whitelist
+ - /bukkit:whitelist
+ - /stop
+ - /bukkit:stop
+ - /bukkit:ban
+ - /restart
+ - /bukkit:restart
+ 
+# AZRanks commands
+ - /azrank
+ - /setrank
+ - /removerank
+ - /azplayer
+ - /azsetrank
+ - /azsetgroup
+ - /azaddgroup
+ - /azremovegroup
+ - /azrankreload
+ - /azranks
+ - /addrank
+ - /rank
+ - /rankset
+ - /setgroup
+ - /azextend
+ 
+# Other commands
+ - /pex
+ - /authme
+ - /essentials
+ - /essentials:ban
+ - /essentials:pt
+ - /essentials:powertool
+ - /powertool
+ - /pt
+ - /sudo
+ - /immune
+ - /nick
+ - /nickname
+ - /maxbans:
+ 
+#whitelist:
+#  /op:
+#    - macer7

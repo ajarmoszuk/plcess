@@ -1,0 +1,55 @@
+name: PLCEss
+main: eu.polandcraft.PLCEss
+description: Pwning you since October 2010!
+version: 8.00
+authors: [Alex Jarmoszuk]
+website: http://polandcraft.eu/
+commands:
+  itemshop:
+    aliases: [is]
+
+  azplayer:
+    description: List player groups
+    usage: "Usage: /<command> <player>"
+    aliases: [azrank,rank]
+  azsetgroup:
+    description: Set <player> groups to <group> for [time] or permanently
+    usage: "Usage: /<command> <player> <group> [[-s] time]"
+    aliases: [azsetrank,setrank,setgroup]
+  azaddgroup:
+    description: Add <player> to <group> for [time] or permanently
+    usage: "Usage: /<command> <player> <group> [[-s] time]"
+    aliases: [azaddrank,addrank,addgroup]
+  azremovegroup:
+    description: Remove <player> from <group>, type * to remove all temporiary groups.
+    usage: "Usage: /<command> <player> <group| *>"
+    aliases: [azremrank,azremgroup,azremoverank,removegroup,remgroup,removerank,remrank]
+  azrankreload:
+    description: Reloads AZRank
+    usage: "Usage: /<command>"
+    aliases: [reloadazrank, rankreload, azrankreload]
+  azranks:
+    description: display a list of user having temp group
+    usage: "Usage: /<command> [page]"
+    aliases: [tempranks, tempgroups,ranks]
+  azextend:
+    description: prolongs the duration of the rank
+    usage: "Usage: /<command> <player> <group> <time>"
+    aliases: [azext]
+
+  azrank.*:
+    description: Allows permission to all SetRankPEX features
+    children:
+      azrank.setrank.*: true
+      azrank.reload: true
+      azrank.restore: true
+  azrank.setrank.*:
+    description: Allows permission to set a user's rank to anything
+    children:
+      azrank.setrank.group: true
+  azrank.setrank.group:
+    description: Allows permission to set a user's rank to the given group
+  azrank.reload:
+    description: Allows permission to reload SetRankPEX
+  azrank.restore:
+    description: Allows permission to restore group

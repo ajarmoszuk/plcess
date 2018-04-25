@@ -1,0 +1,11 @@
+MySQL:
+  Host: localhost
+  Port: 3306
+  User: root
+  Password: password
+  Database: minecraft
+  TablePacks: panelpacks
+  TableIS: itemshop
+  Category: metropolic
+  Table_Logs: logs
+  smsID: 5920
